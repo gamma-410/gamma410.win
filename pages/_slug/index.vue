@@ -1,12 +1,28 @@
 <template>
-<div class="container-fluid">
-  <main class="main">
-    <p class="publishedAt">{{ publishedAt }}</p>
-    <h1 class="title">{{ title }}</h1>
-    <div class="post" v-html="body"></div>
-  </main>
-  <br>
-  <nuxt-link to="/">topPageへ</nuxt-link>
+<div>
+	<div class="container-fluid">
+	<h1 style="line-height: none;border-bottom-width:0px;">
+		<img src="logo1.svg" width="150px">
+	</h1>
+	<main class="main">
+		<p class="publishedAt">{{ publishedAt }}</p>
+		<h1 class="title">{{ title }}</h1>
+		<div class="post" v-html="body"></div>
+	</main>
+	<br>
+	<nuxt-link to="/">topPageへ</nuxt-link><br><br>
+	</div>
+
+	<footer class="bg-dark text-center text-white">
+ 		<div class="text-center p-3" style="background-color:#3d6375">
+			<h2 style="color: #ffffff;"></h2>
+			<a href="/" style="color: #ffffff;">topPageへ</a><br>
+			<nuxt-link to="/about" style="color: #ffffff;">筆者について</nuxt-link><br>
+			<nuxt-link to="/feedback" style="color: #ffffff;">フィードバックを送信</nuxt-link><br><br>
+			<p style="color: #ffffff;">(c) 2022 | drip-notes. </p>
+  		</div>
+	</footer>	
+
 </div>
 </template>
 
@@ -31,21 +47,22 @@ body {
 	margin-top: 50px;
 	font-family: "Hiragino Kaku Gothic Pro",sans-serif;
 	font-size: 14px;
-	padding: 0 12px;
+	padding: 0px;
 	line-height:380%;
-	color:#727272;
+	color:#353535;
 	font-size: 15px;
 	background-color: #fafafa;
 }
 a{
-	color: #727272;
+	color:#353535;
+	text-decoration: underline;
 }
 h2::before {
 	content: "# ";
 	font-size: 20px;
 }
 h2::after{
-	content: ".";
+	content: " .";
 	font-size: 20px;
 }
 
@@ -108,6 +125,15 @@ h6{
 	margin-right: auto;
 	margin-left: auto;
 	max-width: 850px;
+}
+
+body {
+  display: flex;
+  flex-flow: column;
+  min-height: 100vh;
+}
+main {
+  flex: 1;
 }
 
 @media (prefers-color-scheme: dark) {

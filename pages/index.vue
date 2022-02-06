@@ -1,23 +1,35 @@
 <template>
-<div class="container-fluid">
-  <h1>
-    <img src="logo1.svg" width="150px">
-  </h1>
-  <h2>Hello</h2>
-  <ul>
-  <li><nuxt-link to="/about">About me</nuxt-link></li>
-  <li><a href="mailto:mail@dr-notes.work">Contact mail</a></li>
-  </ul>
-  <h2>Articles</h2>
-  <ul>
-    <li v-for="content in contents" :key="content.id">
-      <nuxt-link :to="`/${content.id}`">
-        {{ content.title }}
-      </nuxt-link>
-    </li>
-  </ul>
-  <h1></h1>
-  <p>(c) Copyright 2021 #dr-notes. </p>
+<div>
+
+	<div class="container-fluid">
+	<h1>
+		<img src="logo1.svg" width="150px">
+	</h1>
+	<h2>Hello</h2>
+	<ul>
+	<li><nuxt-link to="/about">About me</nuxt-link></li>
+	<li><a href="mailto:mail@dr-notes.work">Contact mail</a></li>
+	</ul>
+	<h2>Articles</h2>
+	<ul>
+		<li v-for="content in contents" :key="content.id">
+		<nuxt-link :to="`/${content.id}`">
+			{{ content.title }}
+		</nuxt-link>
+		</li>
+	</ul><br><br>
+	</div>
+
+  	<footer class="bg-dark text-center text-white">
+ 		<div class="text-center p-3" style="background-color:#3d6375">
+			<h2 style="color: #ffffff;"></h2>
+			<a href="/" style="color: #ffffff;">topPageへ</a><br>
+			<nuxt-link to="/about" style="color: #ffffff;">筆者について</nuxt-link><br>
+			<nuxt-link to="/feedback" style="color: #ffffff;">フィードバックを送信</nuxt-link><br><br>
+			<p style="color: #ffffff;">(c) 2022 | drip-notes. </p>
+  		</div>
+	</footer>
+
 </div>
 </template>
 
@@ -43,21 +55,21 @@ body {
 	margin-top: 50px;
 	font-family: "Hiragino Kaku Gothic Pro",sans-serif;
 	font-size: 14px;
-	padding: 0 12px;
 	line-height:380%;
-	color:#727272;
+	color:#353535;
 	font-size: 15px;
 	background-color: #fafafa;
 }
 a{
-	color: #727272;
+	color:#353535;
+	text-decoration: underline;
 }
 h2::before {
 	content: "# ";
 	font-size: 20px;
 }
 h2::after{
-	content: ".";
+	content: " .";
 	font-size: 20px;
 }
 
@@ -114,6 +126,16 @@ h5{
 h6{
     font-size: 12px;
     font-weight: medium;
+}
+
+body {
+  display: flex;
+  flex-flow: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
 }
 
 .container-fluid {
