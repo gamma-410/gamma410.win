@@ -21,7 +21,7 @@
 	</div>
 
   	<footer class="bg-dark text-center text-white">
- 		<div class="text-center p-3" style="background-color:#3d6375">
+ 		<div class="text-center p-3" style="background-color:#535353">
 			<h2 style="color: #ffffff;"></h2>
 			<a href="/" style="color: #ffffff;">topPageへ</a><br>
 			<nuxt-link to="/about" style="color: #ffffff;">筆者について</nuxt-link><br>

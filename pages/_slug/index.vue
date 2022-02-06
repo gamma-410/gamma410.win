@@ -1,7 +1,7 @@
 <template>
 <div>
 	<div class="container-fluid">
-	<h1 style="line-height: none;border-bottom-width:0px;">
+	<h1 style="line-height: none;border-bottom-width: 0px;">
 		<img src="logo1.svg" width="150px">
 	</h1>
 	<main class="main">
@@ -14,7 +14,7 @@
 	</div>
 
 	<footer class="bg-dark text-center text-white">
- 		<div class="text-center p-3" style="background-color:#3d6375">
+ 		<div class="text-center p-3" style="background-color:#535353">
 			<h2 style="color: #ffffff;"></h2>
 			<a href="/" style="color: #ffffff;">topPageへ</a><br>
 			<nuxt-link to="/about" style="color: #ffffff;">筆者について</nuxt-link><br>
