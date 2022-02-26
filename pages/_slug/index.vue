@@ -2,7 +2,7 @@
 <div>
 	<div class="container-fluid">
 	<h1 style="line-height: none;border-bottom-width: 0px;">
-		<img src="logo1.svg" width="150px">
+		<img src="logo1.svg" width="100px">
 	</h1>
 	<main class="main">
 		<p class="publishedAt">{{ publishedAt }}</p>
