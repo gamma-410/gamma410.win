@@ -3,7 +3,7 @@
 
 	<div class="container-fluid">
 	<h1>
-		<img src="logo1.svg" width="150px">
+		<img src="logo1.svg" width="100px">
 	</h1>
   <h2>Hello</h2>
   <ul>
