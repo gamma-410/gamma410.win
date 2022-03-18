@@ -5,12 +5,7 @@
 	<h1>
 		<img src="logo1.svg" width="100px">
 	</h1>
-	<h2>Hello</h2>
-	<ul>
-	<li><nuxt-link to="/about">About me</nuxt-link></li>
-	<li><a href="mailto:mail@dr-notes.work">Contact mail</a></li>
-	</ul>
-	<h2>Articles</h2>
+	<h2>News</h2>
 	<ul>
 		<li v-for="content in contents" :key="content.id">
 		<nuxt-link :to="`/${content.id}`">
