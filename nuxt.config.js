@@ -16,7 +16,7 @@ export default {
       { hid: 'og:title', property: 'og:title', content: 'gamma.' },
       { hid: 'og:description', property: 'og:description', content: 'Software Developer' },
       { hid: 'og:image', property: 'og:image', content: 'https://dr-notes.work/ogp.png' },
-      { name: 'twitter:card', content: 'summary' }//　twitterの画像サイズ
+      { name: 'twitter:card', content: 'summary_large_image' }//　twitterの画像サイズ
     ],
     link: [
       { rel: 'icon', type: 'image/icon', href: '/logo.png' },
