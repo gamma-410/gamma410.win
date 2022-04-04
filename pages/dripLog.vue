@@ -11,12 +11,11 @@
 		</div>
 
 		<div class="main">
-
+			<p>全 {{ totalCount }} 件の投稿</p>
 			<div class="text-notes">
 
 				<div class="card-deck" v-for="content in contents" :key="content.id">
 					<div class="card bgs">
-						
 						<div class="card-body">
 						<h3 class="card-title">{{ content.title }}</h3>
 						<nuxt-link :to="`/${content.id}`">&nbsp;<u>Read</u> <span class="material-icon">arrow_forward_ios</span></nuxt-link>
@@ -48,11 +47,8 @@
 import axios from 'axios'
 export default {
   async asyncData() {
-    const { data } = await axios.get(
-      // your-service-id部分は自分のサービスidに置き換えてください
-      'https://moka.microcms.io/api/v1/blog',
+    const { data } = await axios.get('https://moka.microcms.io/api/v1/blog',
       {
-        // your-api-key部分は自分のapi-keyに置き換えてください
         headers: { 'X-MICROCMS-API-KEY': 'af1039ff-f613-47f8-a204-9e0019ae85fe' }
       }
     )

@@ -9,13 +9,15 @@
 					</span>
 				</div>
 				<h1 class="title names fadeUp">
+					
 					<p class="title-ins">
 						{{ title }}
 					</p>
+					
 				</h1>
 
 				<div class="sharelink">
-					<p class="publishedAt">{{ new Date(publishedAt).toLocaleDateString() }}</p>
+					<p class="publishedAt">{{ new Date(publishedAt).toLocaleDateString()}}</p>
 					<a :href="this.twitter" target="_blank">&nbsp;<i class="fa fa-twitter-square fa-lg "></i> <u>Tweet</u></a>
 					<a :href="this.facebook" target="_blank">&nbsp;<i class="fa fa-facebook-square "></i> <u>Post</u></a>
 				</div>
@@ -53,8 +55,7 @@ import axios from 'axios'
 
 export default {
   async asyncData({ params }) {
-    const { data } = await axios.get(
-      `https://moka.microcms.io/api/v1/blog/${params.slug}`,
+    const { data } = await axios.get(`https://moka.microcms.io/api/v1/blog/${params.slug}`,
       {
         headers: { 'X-MICROCMS-API-KEY': 'af1039ff-f613-47f8-a204-9e0019ae85fe' }
       }
