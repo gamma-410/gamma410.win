@@ -35,8 +35,8 @@
 					<li>Figma</li>
 					<li>DTM (Garageband, Studio One)</li>
 				</ul>
-				<p>I run and work with the team "drip".<br>drip: <b>https://drip.dr-notes.work/</b></p>
-				<p>Mail: <b>mail@dr-notes.work</b></p><br>
+				<p>I run and work with the team "drip".<br>drip: <b>https://drip.gamma410.win/</b></p>
+				<p>Mail: <b>mail@gamma410.win</b></p><br>
 				<nuxt-link to="/">&nbsp;<u>Return to the index page</u></nuxt-link>
 			</div>
 
