@@ -28,9 +28,9 @@
 				<p class="sub-title">My blog page is here.</p>
 
 				<div class="nuxtlink">
-					<a href="mailto:mail@dr-notes.work">&nbsp;Mail <span class="material-icons">mail_outline</span></a>
+					<a href="mailto:mail@gamma410.win">&nbsp;Mail <span class="material-icons">mail_outline</span></a>
 				</div>
-				<p class="sub-title">Please contact us at <u>mail@dr-notes.work</u>.</p>
+				<p class="sub-title">Please contact us at <u>mail@gamma410.win</u>.</p>
 
 				<div class="nuxtlink">
 					<a href="https://github.com/gamma-410" target="_blank" rel="noopener noreferrer">&nbsp;GitHub <span class="material-icons">open_in_new</span></a>
