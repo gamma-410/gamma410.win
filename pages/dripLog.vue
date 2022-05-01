@@ -37,7 +37,7 @@
 
  		<div class="text-center p-3 foots"><br><br>
 			<img src="logo1.svg" width="40px"><br>
-			<p style="color: #ffffff;">&copy; 2022  dr-notes.work </p>
+			<p style="color: #ffffff;">&copy; 2022  gamma410.win </p>
   		</div>
 
 	</footer>
