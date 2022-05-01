@@ -82,11 +82,17 @@ body {
 	background-color: #ececec;
 }
 .imgs{
+	object-fit: cover;
+  	width: 100%;
+  	height: 100%;
+}
+.imgs{
 	border-radius: 30px 30px 0px 0px;
 	width: 100%;
-  	height: 400px;
-  	object-fit: cover;
-	box-shadow: 0 1px 5px rgba(104, 104, 104, 0.2);
+  	height: 100%;
+	box-shadow: 0 1px 5px rgba(199, 199, 199, 0.2);
+  	position: relative;
+	overflow: hidden;
 }
 .publishedAt {
 	color: rgb(133, 133, 133);
@@ -248,6 +254,14 @@ ul {
 	display: inline-block;
 }
 @media (prefers-color-scheme: dark) {
+	.imgs{
+		border-radius: 30px 30px 0px 0px;
+		width: 100%;
+		height: 400px;
+		box-shadow: 0 1px 5px rgba(193, 193, 193, 0.2);
+		position: relative;
+		overflow: hidden;
+	}
 	html{
 		border-top: 1px solid #cdcdcd;
 	}
@@ -295,12 +309,12 @@ ul {
 		background-color:#0d0d0d;
 	}
 	.main-text1 {
-		border-radius: 30px;
+		border-radius: 0px 0px 30px 30px;
 		padding: 25px;
 		background: rgb(56, 56, 56);
 		margin-right: 0px;
 		margin-left: 0px;
-		margin-top: 60px;
+		margin-top: 0px;
 		margin-bottom: 180px;
 		animation: text-in .8s cubic-bezier(0.22, 0.15, 0.25, 1.43) 0.3s backwards;
 	}
@@ -360,6 +374,7 @@ opacity:10;
 	}
 
 @media screen and (max-width: 500) {
+
 	.main-text1 {
 		border-radius: 10px;
 		background: #fff;
