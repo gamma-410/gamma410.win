@@ -16,6 +16,9 @@
 
 				<div class="card-deck" v-for="content in contents" :key="content.id">
 					<div class="card bgs">
+						<span v-if="content.img">
+							<img :src="content.img.url" class="imgss"><br>
+						</span>
 						<div class="card-body">
 						<h3 class="card-title">{{ content.title }}</h3>
 						<nuxt-link :to="`/${content.id}`">&nbsp;<u>Read</u> <span class="material-icon">arrow_forward_ios</span></nuxt-link>
@@ -49,14 +52,13 @@ export default {
   async asyncData() {
     const { data } = await axios.get('https://moka.microcms.io/api/v1/blog',
       {
-        headers: { 'X-MICROCMS-API-KEY': 'af1039ff-f613-47f8-a204-9e0019ae85fe' }
+        headers: { 'X-MICROCMS-API-KEY': '7502776043464ba4a0afb2f498d19fee5663' }
       }
     )
     return data
   }
 }
 </script>
-
 <style>
 body {
 	margin-top: 10px;
@@ -69,6 +71,12 @@ body {
 }
 .letter-pack {
 	letter-spacing: 1px;
+}
+.imgss{
+	border-radius: 25px 25px 0px 0px;
+	width: 100%;
+  	height: 300px;
+  	object-fit: cover;
 }
 a{
 	color:#353535;
@@ -195,6 +203,7 @@ ul {
 .bgs{
 	border-radius: 25px;
 	border: none;
+	box-shadow: 0 1px 5px rgba(104, 104, 104, 0.2);
 	margin-top: 20px;
 }
 

@@ -9,7 +9,6 @@
 					</span>
 				</div>
 				<h1 class="title names fadeUp">
-					
 					<p class="title-ins">
 						{{ title }}
 					</p>
@@ -27,9 +26,8 @@
 	</div>
 
 	<div class="container-fluid1 clala">
-
+		<img :src=img.url class="imgs logo">
 		<main class="main-text1">
-
 			<div class="post" v-html="body"></div>
 			
 		<nuxt-link to="/dripLog">&nbsp;<u>Back</u></nuxt-link><br><br>
@@ -57,14 +55,14 @@ export default {
   async asyncData({ params }) {
     const { data } = await axios.get(`https://moka.microcms.io/api/v1/blog/${params.slug}`,
       {
-        headers: { 'X-MICROCMS-API-KEY': 'af1039ff-f613-47f8-a204-9e0019ae85fe' }
+        headers: { 'X-MICROCMS-API-KEY': '7502776043464ba4a0afb2f498d19fee5663' }
       }
     )
     return data
   },
   computed: {
 	twitter(){
-        return `https://twitter.com/intent/tweet?url=https://dr-notes.work/${this.id}&text=dripLog - ${this.title}\n&\nhashtags=dripLog`
+        return `https://twitter.com/intent/tweet?&text=dripLog - ${this.title} %0a https://gamma410.win/${this.id} %0a writer: @gamma_410 %20%23dripLog%20`
     },
 	facebook() {
       return `https://www.facebook.com/sharer/sharer.php?u=https://dr-notes.work/${this.id}`;
@@ -82,6 +80,13 @@ body {
 	color:#353535;
 	font-size: 15px;
 	background-color: #ececec;
+}
+.imgs{
+	border-radius: 30px 30px 0px 0px;
+	width: 100%;
+  	height: 400px;
+  	object-fit: cover;
+	box-shadow: 0 1px 5px rgba(104, 104, 104, 0.2);
 }
 .publishedAt {
 	color: rgb(133, 133, 133);
@@ -198,12 +203,13 @@ main {
 	color:rgb(122, 122, 122);
 }
 .main-text1 {
-	border-radius: 30px;
+	border-radius: 0px 0px 30px 30px;
 	padding: 25px;
 	background: #fff;
+	box-shadow: 0 1px 1px rgba(104, 104, 104, 0.2);
 	margin-right: 0px;
 	margin-left: 0px;
-	margin-top: 60px;
+	margin-top: 0px;
 	margin-bottom: 180px;
 	animation: text-in .8s cubic-bezier(0.22, 0.15, 0.25, 1.43) 0.3s backwards;
 }
