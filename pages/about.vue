@@ -18,24 +18,21 @@
 				<p>I participate in these projects.</p>
 				<ul>
 					<li>Kiyos Project</li>
-					<li>Umiiro</li>
+					<li>Ui Development</li>
 				</ul>
 				<h3>Developer Skills</h3>
 				<ul>
-					<li>JavaScript (Web)</li>
 					<li>Python</li>
-					<li>HTML&CSS</li>
-					<li>Swift (iOS)</li>
-					<li>Vim</li>
-					<li>Vercel</li>
-					<li>Firebase Console</li>
+					<li>Flask</li>
+					<li>Kotlin</li>
+					<li>HTML5&CSS3</li>
+					<li>JavaScript</li>
 				</ul>
 				<h3>Other Skills</h3>
 				<ul>
 					<li>Figma</li>
-					<li>DTM (Garageband, Studio One)</li>
+					<li>Vim</li>
 				</ul>
-				<p>I run and work with the team "drip".<br>drip: <b>https://drip.gamma410.win/</b></p>
 				<p>Mail: <b>mail@gamma410.win</b></p><br>
 				<nuxt-link to="/">&nbsp;<u>Return to the index page</u></nuxt-link>
 			</div>
