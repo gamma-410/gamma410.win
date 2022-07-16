@@ -7,7 +7,7 @@
 
 			<img src="logo1.svg" width="85px">
 			<h1 class="name fadeUp"><b>gamma.</b></h1>
-			<p class="sub-name">So<span class="letter-pack">ft</span>ware Developer / JavaScript, Python</p>
+			<p class="sub-name">So<span class="letter-pack">ft</span>ware Developer / Python, Kotlin, JS</p>
 
 		</div>
 
